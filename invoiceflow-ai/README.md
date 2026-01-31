@@ -46,11 +46,18 @@ Austin's #1 invoicing tool. Clean, modern invoice automation for Austin freelanc
 
 ## Deploy (Vercel)
 
-```bash
-vercel --prod
-```
+1. **If you see 404 NOT_FOUND** – Your repo root may be the parent of `invoiceflow-ai`. In Vercel:
+   - Go to **Project → Settings → General**
+   - Set **Root Directory** to `invoiceflow-ai` (or the folder that contains `package.json`)
+   - Save and redeploy
 
-Set env vars in Vercel dashboard (see `.env.example`). Cron runs daily for overdue invoice reminders.
+2. Deploy:
+   ```bash
+   cd invoiceflow-ai && vercel --prod
+   ```
+   Or connect the repo in Vercel and ensure Root Directory points to the app folder.
+
+3. Set env vars in **Project → Settings → Environment Variables** (see `.env.example`). Cron runs daily for overdue invoice reminders.
 
 ## Routes
 

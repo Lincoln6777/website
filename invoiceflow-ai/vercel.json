@@ -1,17 +1,9 @@
 {
+  "framework": "nextjs",
   "crons": [
     {
       "path": "/api/automations/cron",
       "schedule": "0 9 * * *"
     }
-  ],
-  "env": {
-    "NEXT_PUBLIC_SUPABASE_URL": "@supabase_url",
-    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase_anon_key",
-    "NEXT_PUBLIC_APP_URL": "@app_url",
-    "STRIPE_SECRET_KEY": "@stripe_secret_key",
-    "RESEND_API_KEY": "@resend_api_key",
-    "OPENAI_API_KEY": "@openai_api_key",
-    "CRON_SECRET": "@cron_secret"
-  }
+  ]
 }
