@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --austin-teal: #0f4c5c;
+  --austin-orange: #f4a261;
+  --austin-offwhite: #f8f9fa;
+  --austin-sage: #87a96b;
+  --radius: 16px;
+}
+
+body {
+  @apply bg-background text-secondary antialiased;
+  line-height: 125%;
+}
+
+.dark {
+  --background: #0f4c5c;
+  --foreground: #f8f9fa;
+}
+
+/* Glassmorphism */
+.glass {
+  @apply bg-white/80 dark:bg-austin-teal/80 backdrop-blur-md;
+}
+
+/* Neumorphism inset */
+.neumorph {
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.dark .neumorph {
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
