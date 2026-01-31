@@ -11,7 +11,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { UserPlus, MoreHorizontal, Pencil, Trash2, Eye, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
